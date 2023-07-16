@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="index.js"></script>
+</head>
+<body>
+<input id="so1" value="23000">
+<select id="sl1">
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
+</select>
+<select id="sl2">
+    <option value="23000">USD</option>
+    <option value="1">VND</option>
+</select>
+<button onclick="doi()">change</button>
+</body>
+<script>
+    function doi(){
+        let money = +document.getElementById("so1").value;
+        let curr1 = +document.getElementById("sl1").value;
+        let curr2 = +document.getElementById("sl2").value;
+        alert(money*curr1/curr2)
+    }
+
+</script>
+</html>
