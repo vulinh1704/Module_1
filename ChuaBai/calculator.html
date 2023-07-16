@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<style>
+    input {
+        width: 100%;
+    }
+
+    table {
+        text-align: center;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="cal"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="(" onclick="getValue(event)"></td>
+        <td><input type="button" value=")" onclick="getValue(event)"></td>
+        <td><input type="button" value="%" onclick="getValue(event)"></td>
+        <td><input type="button" value="AC" onclick="xoa()"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="getValue(event)"></td>
+        <td><input type="button" value="8" onclick="getValue(event)"></td>
+        <td><input type="button" value="9" onclick="getValue(event)"></td>
+        <td><input type="button" value="/" onclick="getValue(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="getValue(event)"></td>
+        <td><input type="button" value="5" onclick="getValue(event)"></td>
+        <td><input type="button" value="6" onclick="getValue(event)"></td>
+        <td><input type="button" value="*" onclick="getValue(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="getValue(event)"></td>
+        <td><input type="button" value="2" onclick="getValue(event)"></td>
+        <td><input type="button" value="3" onclick="getValue(event)"></td>
+        <td><input type="button" value="-" onclick="getValue(event)"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="0" onclick="getValue(event)"></td>
+        <td><input type="button" value="." onclick="getValue(event)"></td>
+        <td><input type="button" value="=" onclick="tinh()"></td>
+        <td><input type="button" value="+" onclick="getValue(event)"></td>
+    </tr>
+</table>
+
+<script>
+    let chuoi = '';
+
+    function getValue(event) {
+        let value = event.target.value; // '' + '(' + '7' + '+'
+        chuoi += value;
+        document.getElementById('cal').value = chuoi;
+    }
+
+    function tinh() {
+        let a = document.getElementById("cal").value;
+        // (7 + 2) * 3 - 3
+        // eval()
+        alert(eval(a))
+    }
+
+    function xoa() {
+        document.getElementById('cal').value = '';
+        chuoi = '';
+    }
+</script>
+</body>
+</html>

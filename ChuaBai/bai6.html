@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+
+<!--<form action="">-->
+    <!--<table>-->
+    <!--    <tr>-->
+    <!--        <td style="width: 100px">User name</td>-->
+    <!--        <td><input type="text"></td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td>Password</td>-->
+    <!--        <td><input type="password"></td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td>City of Employment</td>-->
+    <!--        <td><input type="text"></td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td>Web server</td>-->
+    <!--        <td>-->
+    <!--            <select>-->
+    <!--                <option value="">Choose a server</option>-->
+    <!--                <option value=""></option>-->
+    <!--                <option value=""></option>-->
+    <!--            </select>-->
+    <!--        </td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td>Please spectify your role</td>-->
+    <!--        <td>-->
+    <!--            <input type="radio" name="role"> Admin-->
+    <!--            <br>-->
+    <!--            <input type="radio" name="role"> User-->
+    <!--            <br>-->
+    <!--            <input type="radio" name="role"> Manager-->
+    <!--            <br>-->
+    <!--            <input type="radio" name="role"> Abc-->
+    <!--        </td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td>Please spectify your role</td>-->
+    <!--        <td>-->
+    <!--            <input type="checkbox"> Mail-->
+    <!--            <br>-->
+    <!--            <input type="checkbox"> Payroll-->
+    <!--            <br>-->
+    <!--            <input type="checkbox"> Self-->
+    <!--        </td>-->
+    <!--    </tr>-->
+    <!--    <tr>-->
+    <!--        <td></td>-->
+    <!--        <td>-->
+    <!--            <button>Login</button>-->
+    <!--            <button>Reset</button>-->
+    <!--        </td>-->
+    <!--    </tr>-->
+    <!--</table>-->
+<!--</form>-->
+
+
+<!--input type reset chỉ hoạt động trong form-->
+
+
+<!--Nếu để get thì tự động gửi dữ liệu lên thanh url, thường dành cho trường hợp tìm kiếm-->
+<!--Nếu để post thì nó không gửi lên thanh url, thường dành cho trường đăng nhập, thêm dữ liệu, gửi được nhiều dữ liệu hơn -->
+<form method="get" action="https://www.google.com/search">
+<!--    method và action là hai thuộc tính của form-->
+<!--    Method quy định định cách gửi dữ liệu-->
+<!--    Action: Quy định nơi dữ liệu được gửi đến-->
+    Nhập cái cần tìm kiếm:
+    <input type="text" name="q">
+    <button>Submit</button>
+<!--    <=>-->
+    <input type="submit" value="Submit">
+<!--    <input type="reset" value="reset">-->
+</form>
+</body>
+</html>
