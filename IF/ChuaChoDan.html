@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    // let doanhThu = +prompt("Nhập doanh thu: ")
+    //
+    // let hoaHong = 0;
+    // if(doanhThu < 100) {
+    //     hoaHong = 20 / 100 * doanhThu;
+    // }
+    // if(doanhThu > 100 && doanhThu < 200) {
+    //     hoaHong = 22/100 * doanhThu;
+    // }
+    // if(doanhThu > 300) {
+    //     hoaHong = doanhThu;
+    // }
+    // alert(hoaHong)
+
+
+    let soPhut = +prompt("Nhập phút: ");
+    let tien = 0;
+    if (soPhut < 10) {
+        tien = 5 * soPhut
+    } else if (soPhut > 10 && soPhut < 20) {
+        tien = 10 * soPhut
+    } else if (soPhut > 20) {
+        tien = 20 * soPhut
+    }
+    alert(tien)
+</script>
+</body>
+</html>

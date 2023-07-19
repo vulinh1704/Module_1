@@ -2,10 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-  <script src="demo.js"></script>
+    <title>Điều kiện</title>
 </head>
 <body>
 
+<script>
+    // Nhập vào tuổi và in ra "Bạn đủ tuổi" nếu tuổi > 18
+    // let name = prompt("Nhập tên") // Dân
+    // console.log("Hello");
+    // if(name == "Linh") {
+    //   console.log("Linh")
+    // }
+    // console.log("End")
+
+    // Hello
+    // Linh
+    // End
+
+    // let tuoi = +prompt("Nhập tuổi")
+    // if(tuoi > 18) { // Ngược lại điều kiện này : tuổi <= 18
+    //   alert("Bạn đủ đuổi")
+    // } else {
+    //   alert("Bạn không có tuổi")
+    // }
+
+    // Khi điều kiện trả false thì sẽ nhảy vào else
+    // Nhập vào tên in ra "Hello" nếu nhập vào "Linh" ngược lại in ra "c06"
+
+    // let name = prompt("Nhập tên: ")
+    // if (name == "Linh") {
+    //     alert("Hello")
+    // } else {
+    //     alert("C06")
+    // }
+
+
+    // let a = +prompt("Nhập số")
+    // if (a > 10) {
+    //     alert("a lớn 10")
+    // } else if (a == 10) {
+    //     alert("a bằng 10")
+    // } else {
+    //     alert("a nhỏ hơn 10")
+    // }
+
+    // Nhập vào một chuỗi nếu "Linh" in ra "Chào", nếu là "Lâm" in ra "Hello"
+    // nếu là "Dân" in ra "Chào em", nếu không vào trường hợp nào in ra "c06".
+
+    // let name = prompt("Nhập tên: ")
+    // if(name == "Linh") {
+    //     alert("Chào")
+    // } else if (name == "Lâm") {
+    //     alert("Hello")
+    // } else if (name == "Dân") {
+    //     alert("Chào em")
+    // } else {
+    //     alert("C06")
+    // }
+
+
+    // Sử dụng kết hợp toán tử logic và if
+    // Nếu tuổi > 12 và nhỏ hơn 18 thì in ra "Bạn đủ tuổi"
+    let tuoi = +prompt("Nhập tuổi: ")
+    if (tuoi > 12 && tuoi < 18) {  // 19  => true && false => false
+        alert("Bạn đủ đuổi")
+    }
+
+    // if lồng nhau
+    if(tuoi > 12) {
+        if(tuoi < 18) {
+            alert("Bạn đủ tuổi")
+        }
+    }
+
+
+    // Sử dụng toán tử hoặc
+
+    // if(so < 0 || so > 10) { // false || false => false
+    //     alert("Số này không thuộc 0 - 10")
+    // }
+
+    let so = 1;
+    if(so < 0) {
+        alert("Số này nhỏ hơn 0")
+    }
+
+    if(so > 10) {
+        alert("Số này lớn hơn 10")
+    }
+
+</script>
 </body>
 </html>

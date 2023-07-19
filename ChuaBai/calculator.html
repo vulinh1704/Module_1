@@ -54,15 +54,15 @@
     let chuoi = '';
 
     function getValue(event) {
-        let value = event.target.value; // '' + '(' + '7' + '+'
-        chuoi += value;
+        let value = event.target.value; // '' + '0' + '3'
+        chuoi = chuoi + value;
         document.getElementById('cal').value = chuoi;
     }
 
     function tinh() {
         let a = document.getElementById("cal").value;
-        // (7 + 2) * 3 - 3
-        // eval()
+        // (7 + 3)
+        // eval() ham co san
         alert(eval(a))
     }
 
