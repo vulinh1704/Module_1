@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Đặt vấn đề:
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    console.log(2)
+    ...
+     */
+
+    // Khái niệm vòng lặp: để thực hiện ngắn gọn code, tránh bị lặp code
+    // Bài toán : Hiển thị 1000 chữ "Hello"
+    // => Điều kiện lặp: 1000 lần, khối lệnh: Hiển thị chữ "Hello"
+
+    for(let i = 1; i <= 1000; i += 1) {
+        console.log("Hello" + i)
+    }
+    // Bước 1: Khởi tạo biến đếm
+    // Bước 2: Kiểm tra <điều kiện> (sẽ đặt kiểu dữ liệu boolean vào)
+    // Bước 3: Chạy khối lệnh nếu <điều kiện> true
+    // Bước 4: Tăng i sau đó quay trở lại bước 2 => 3 => 4
+    // Cứ tiếp tục đến khi bước 2 trả về false
+
+    for(let i = 1; i <= 100; i++) {
+        console.log(i) // <khối lệnh>
+    }
+
+    // -------- Thứ tự thực hiện ---------
+    // B1: Khởi tạo i = 1
+    // B2: Kiểm tra i <= 100 hay không? (true)
+    // B3: Vì khối lệnh 2 true nên  <khối lệnh> chạy
+    // B4: Tăng i lên 1 đơn vị => i = 2
+
+    // Quay lại B2: Kiểm tra i <= 100 hay không? (true)
+    // Bước 3: Thực hiện <khối lệnh>
+    // Bước 4: Tăng i lên 1 đơn vị => i = 3
+
+    //Tiếp tục lặp...
+
+    //Lặp khi i > 100 đồng nghĩa <điều kiện> false thì dừng vòng lặp
+
+    /*
+     ---------------- Cú pháp vòng lặp--------------
+    for(<Khởi tạo biến đếm>; <Điều kiện> ; <Tăng_giảm_biến_đếm>) {
+        <Khối lệnh cần lặp>
+    }
+     */
+
+    /*
+   for (; ; ) {
+       console.log("Linh")
+   }
+   => lặp vô hạn
+   */
+
+    /*
+       let i = 0;
+       for ( ;i < 10; ) {
+           console.log(i)
+           i++
+       }
+     */
+
+    /*
+       for (let i = 10; i >= 1 ; i--) {
+           console.log(i)
+       }
+     */
+
+
+   //Bài tập: Hiển thị số chẵn từ 0 - 10
+    // C1
+   for (let i = 0; i <= 10; i++) {
+       if(i % 2 === 0) {
+           console.log(i)
+       }
+   }
+
+   //C2
+    for (let i = 0; i <= 10 ; i = i + 2) { // 0, 2, 4 ,6
+        console.log(i)
+    }
+
+
+
+    //Các lỗi nên tránh
+    // for (let i = 0; i <= 0; i--) {
+    //     console.log(i)
+    // }
+
+
+
+
+
+
+</script>
+</body>
+</html>
