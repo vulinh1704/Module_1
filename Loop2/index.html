@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop</title>
+</head>
+<body>
+
+<script>
+
+    //    for (let i = 0; i < 10; i++) {
+    //        for (let j = 0; j < 20; j++) {
+    //            if(j == 1) {
+    //                break;
+    //            }
+    //        }
+    //    }
+    //
+    //
+    //    for (let i = 0; i < 30; i++) {
+    //        if(i % 2 == 0) {
+    //            continue;
+    //        }
+    //        console.log(i)
+    //    }
+
+
+    let a = +prompt("Nhập a: ");
+    let b = +prompt("Nhập b: ");
+    // let tong = 0;
+    // for (let i = a; i <= b; i++) {
+    //     if(i % 5 === 2) {
+    //         tong += i; //<=> tong = tong + i
+    //     }
+    // }
+    // alert(tong)
+
+    let dem = 0;
+    for (let i = a; i <= b; i++) {
+        if(i % 5 === 2) {
+            // dem = dem + 1;
+            // dem += 1;
+            dem++;
+        }
+    }
+    alert(dem)
+
+
+    for (let i = 10; i >= 0 ; i--) {
+        alert(i);
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

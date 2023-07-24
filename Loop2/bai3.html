@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+
+
+<script>
+    /*
+
+    let count = 0;
+
+    let fn_1 = 1;
+    let fn_2 = 1;
+    let fn = fn_1 + fn_2;
+    for (; ;) {
+        console.log(fn)
+        fn = fn_1 + fn_2;
+        fn_2 = fn_1;
+        fn_1 = fn;
+        count++;
+        if(count === 20) {
+            break;
+        }
+    }
+     */
+
+    /*
+       let count = 0;
+       let tong = 0;
+       for (let i = 0; ; i++) {
+           if(i % 7 === 0) {
+               count++;
+               tong += i;
+           }
+           if(count === 30) {
+               break;
+           }
+       }
+       alert(tong);
+
+     */
+
+    // let i = 0;
+    // while (i < 20) {
+    //     console.log(i);
+    //     i++;
+    // }
+    //
+    //
+    // let count = 0;
+    // let tong = 0;
+    //
+    // let i = 0;
+    // while (true) {
+    //     if(i % 7 === 0) {
+    //         count++;
+    //         tong += i;
+    //     }
+    //     if(count === 30) {
+    //         break;
+    //     }
+    // }
+    // alert(tong);
+
+
+    /*
+    while (<điều kiện>) {
+        <Khối lệnh thực thi>
+    }
+     */
+
+
+    /*
+    do {
+        <Khối lệnh thực thi>
+    } while (<điều kiện>)
+     */
+
+
+    /*
+    let i = 1;
+    do {
+        // i = +prompt("Nhập i lớn hơn 10"); // 9
+        i++;
+        console.log(i);
+    } while (i <= 10); // 0 <= 10: điều kiện đúng; 11 <= 10: điều kiện sai
+     */
+
+
+    /*
+    for (let i = 1; i <= 100; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz")
+        } else if (i % 3 === 0) {
+            console.log("Fizz")
+        } else if (i % 5 === 0) {
+            console.log("Buzz")
+        } else {
+            console.log(i)
+        }
+    }
+     */
+
+
+    let so = Number.parseInt(Math.random() * 10);
+    console.log(so);
+    let soNhap;
+    let count = 0;
+    do {
+        soNhap = +prompt("Đoán đi :)))))")
+        count++;
+        if(soNhap === so) {
+            alert("Bạn đã ăn 100000000")
+        }
+        if(count === 3) {
+            alert("Bạn đã thua")
+            break;
+        }
+    } while (so !== soNhap);
+</script>
+</body>
+</html>
