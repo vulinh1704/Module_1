@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let mang = [1, 7, 5, 9, 2, 6];
+    //Index     0  1  2  3  4  5
+
+    for (let i = 0; i < mang.length; i++) {
+        console.log(mang[i])
+    }
+
+    console.log("In ra các phần tử chẵn")
+    for (let i = 0; i < mang.length; i++) {
+        if (mang[i] % 2 === 0) {
+            console.log(mang[i])
+        }
+    }
+
+    console.log("In ra các phần tử vị trí chẵn =======>")
+    for (let i = 0; i < mang.length; i++) {
+        if(i % 2 === 0) {
+            console.log(mang[i])
+        }
+    }
+</script>
+</body>
+</html>

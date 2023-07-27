@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+
+<script>
+    // Tiền gửi vào: 1000, với lãi 10%/1thang. Tính sau 1 năm tổng tiền
+    let tien = 1000;
+    for (let i = 1; i <= 12; i++) {
+        tien = tien + (tien * 0.1)
+    }
+
+
+    let name1 = 'Đêf'
+    let name2 = 'Linh'
+    let name3 = 'Dân'
+
+    //let studentC06 = ['Linh', 'Lộc', 'Dân', 'Đề']
+
+    // Các khái niệm lưu ý:
+    /*
+           Độ dài của mảng: có 4 phần tử => length = 4; alert(studentC06.length)
+           Vị trí (Index): là nơi các phần tử nằm, bắt đầu từ 0, phần tử cuối cùng là vị trí length - 1
+           Phần tử (Element): Là các giá trị trong mảng
+     */
+
+    //alert(studentC06[2]) // Lấy ra giá trị của studentC06 ở vị trí thứ 2 => Dân
+
+    //Cách 2: let ages = new Array(1,2,3,5,7);
+
+
+    //let studentC06 = ['Linh', 'Lộc', 'Dân', 'Đề']
+    //studentC06[1] = 'Đức'; // Thay thế giá trị tại vị trí thứ 1 của studentC06
+    //alert(studentC06[1])
+
+    /*
+    alert(studentC06[0])
+    alert(studentC06[1])
+    alert(studentC06[2])
+    alert(studentC06[3])
+     */
+
+    /*
+    for (let i = 0; i < studentC06.length; i++) {
+        console.log(studentC06[i])
+    }
+
+     */
+
+
+    // let abc = [1, 'Linh', true, 0.5, {name: 'Dân'}]
+    // Mảng trong Js có thể lưu trữ nhiều kiểu giá trị
+
+
+    let studentC06 = [];
+    studentC06.push('Dân');
+    studentC06.push('Mai');
+    studentC06.push('Lâm');
+
+    console.log(studentC06)
+
+    studentC06.pop();
+    console.log("Sau khi xóa ======>")
+    console.log(studentC06)
+
+
+    console.log("Sau khi sử dụng join =====>")
+    console.log(studentC06.join(';')) // Chuyển từ mảng thành chuỗi
+
+    let studentC07 = ['Linh', 'Như Anh'];
+    let gopMang = studentC06.concat(studentC07)
+    console.log(gopMang); // Gộp 2 mảng lại với nhau
+
+
+    let arr = [1, 3, 2, 6, 5]; // Sắp xếp mảng
+    console.log("Mảng sau khi được sắp xếp =====>")
+    console.log(arr.sort())
+
+
+
+
+
+</script>
+</body>
+</html>
