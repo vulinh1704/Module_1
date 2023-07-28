@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    /*
+    let numbers = [0, 3, 4, 6, 7, 8, 10, 20, 45];
+    let input = +prompt("Nhập số: ")
+    let flag = false;
+    for (let i = 0; i < numbers.length; i++) {
+        if(input === numbers[i]) {
+            alert(`V nằm ở vị trí ${i} trong mảng`); // Template String
+            flag = true;
+        }
+    }
+
+    if (!flag) {
+        alert("V không nằm trong mảng")
+    }
+     */
+
+    // Cách 2: dùng indexOf(): Tìm kiếm xem số đó có trong trong mảng không nếu có trả về vị trí, không thì trả về -1;
+    let numbers = [0, 3, 4, 6, 7, 8, 10, 20, 45];
+    let input = +prompt("Nhập số: ")
+
+    let index = numbers.indexOf(input);
+    if(index === -1) {
+        alert("V không có trong mảng")
+    } else  {
+        alert(`V nằm ở vị trí ${index} trong mảng`)
+    }
+
+
+
+</script>
+</body>
+</html>

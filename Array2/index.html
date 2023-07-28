@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+<script>
+    // Chữa bài 5, 6, 7, 8
+    // Ôn tập, tìm hiểu 1 vài hàm tương tác mảng, phân biệt i++ và ++i
+
+    /*
+    Mảng: là một biến đặc biệt, chứa một tập các giá trị có liên quan đến nhau,
+    Ví dụ một danh sách sỗ, chuỗi, danh sách các sinh viên,...
+
+    Chiều dài mảng(length): Số lượng các phần tử
+    Vị trí các phần tử: bắt đầu từ 0, kết thúc là length - 1
+    Phần tử trong mảng
+     */
+
+    let names = ['Đề', 'Đân', 'Đức', 'Mai'];
+    //            0      1      2      3
+    console.log(names[1])
+
+    // Các hàm tương tác với mảng:
+    // thêm vào cuối mảng(push) và tăng chiều dài của mảng (length)
+    names.push('Linh')
+
+    // pop() xóa phần tử cuối mảng và giảm độ dài của mảng
+    names.pop();
+
+    // concat(): nối 2 mảng với nhau
+    let names2 = ['Lộc', 'Hiếu'];
+    let names3 = names.concat(names2); // ['Đề', 'Dân', 'Đức', 'Mai','Lộc', 'Hiếu']
+
+    // join(): lấy ra chuỗi
+    console.log(names.join(";")) // Đề;Dân;Đức;Mai
+
+    // sort(): Sắp xếp mảng
+    console.log(names.sort());
+
+
+    console.log('Sắp xếp số =========>')
+    let numbers = [1, 2, 7, 8, 23, 45, 9];
+    console.log(numbers.sort());
+
+
+
+
+
+
+</script>
+</body>
+</html>
