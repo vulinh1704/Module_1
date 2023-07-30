@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn bị bài</title>
+</head>
+<body>
+
+<script>
+
+    // Khi khai báo hàm bắt buộc có từ khóa function
+    // đặt tên hàm là động từ và mô tả nhiệm vụ của hàm đấy.
+
+    function showHello(a, b) { //a, b là số tham số truyền vào
+        alert(a + b); // Hi C06
+    }
+
+    // showHello('Xin chào ', 'C06');
+    // showHello('Hi ', ' C06'); // Đối số: Giá tri thực sự truyền vào hàm
+
+
+    //f(x) = x^2;
+    //f(5);
+
+    // Tạo một hàm nhận vào 2 số và hiển thị tích của chúng ra hộp thoại.
+
+    /*
+    function hienThiTich(so1, so2) {
+        let tich = so1 * so2;
+        alert(tich)
+    } // trả về undefined
+
+    hienThiTich(4, 3);
+     */
+
+    //return: là một từ khóa để khai báo giá trị trả về của hàm
+    //Tạo một hàm nhận vào 2 số và lấy về tích của chúng ra hộp thoại
+
+    function layTich(so1, so2) {
+        let tich = so1 * so2;
+        return tich; // 15
+    }
+
+    console.log(layTich(3, 5)); // 15
+
+</script>
+</body>
+</html>
