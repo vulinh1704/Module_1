@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+
+<script>
+    // 1. Viết hàm nhập vào một mảng, trả về tổng các phần tử trong mảng.Sử dụng hàm.
+    function tinhTong(mang) {
+        let tong = 0;
+        for (let i = 0; i < mang.length; i++) {
+            tong += mang[i];
+        }
+        return tong;
+    }
+
+    // 2. Viết hàm nhập vào một mảng, trả về tổng các phần tử lẻ trong mảng. Sử dụng hàm.
+    function tinhTongLe(mang) {
+        let tongLe = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] % 2 !== 0) {
+                tongLe += mang[i];
+            }
+        }
+        return tongLe;
+    }
+
+    // 3. Viết hàm nhập vào một mảng, trả về số lượng các phần tử lẻ trong mảng. Sử dụng hàm.
+    function demSoLuong(mang) {
+        let count = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] % 2 !== 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // 4. Sử dụng hàm ở ý 2 và 3. Tính trung bình các phần tử lẻ trong mảng.
+    function getAvg(arr) {
+        let avg = tinhTongLe(arr) / demSoLuong(arr);
+        return avg;
+    }
+
+    // 5. Viết hàm nhận vào 1 mảng và một số x, tìm x trong mảng. Nếu có trả về vị trí, không thì trả về -1. Sử dụng hàm.
+
+    function timViTriX(mang, x) {
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === x) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
+    // 6. Viết hàm nhận vào 1 mảng.Trả về  max  các phần tử.Sử dụng hàm.
+    function timMax(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+
+    // 7. Sử dụng hàm ở ý 5 và 6. Viết hàm nhận vào một mảng, hiển thị vị trí của các phần tử có giá trị bằng max trong mảng.
+    function hienThiViTriMax(arr) {
+        let max = timMax(arr);
+        let viTriMax = timViTriX(arr, max);
+        alert(viTriMax);
+    }
+
+    // 8. Viết hàm nhận vào một số, nếu là số nguyên tố, trả về true, không thì false. Sử dụng hàm.
+
+    function kiemTraSoNguyenTo(x) {
+        if (x < 2) {
+            return false;
+        } else if (x === 2) {
+            return true;
+        } else {
+            for (let i = 2; i < x; i++) {
+                if (x % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    // 9. Sử dụng hàm ở 8. Viết hàm nhận 1 mảng, trả về số lượng số nguyên tố trong mảng. Sử dụng hàm.
+    function demSLSoNguyenTo(arr) { // [1, 5,7,9]
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (kiemTraSoNguyenTo(arr[i])) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // 10. Sử dụng hàm ở 8. Viết hàm nhận vào a và b. In ra số nguyên tố từ a đến b. Sử dụng hàm.
+    function inSoNguyenTo(a, b) {
+        for (let i = a; i <= b; i++) {
+            if (kiemTraSoNguyenTo(i)) {
+                console.log(i)
+            }
+        }
+    }
+
+    inSoNguyenTo(5, 20);
+</script>
+
+</body>
+</html>

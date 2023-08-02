@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="helloC06()">Hello</button>
+<script>
+    /*
+
+    // alert() console.log Math.sqrt(), ...
+
+
+    function helloC06() { // Đặt tên hàm: phải là động từ, mô tả chức năng của hàm;
+        // nhiều code ....
+        alert("Chào C06")
+    } // tự xây dựng
+
+
+    function hello() {
+        helloC06();
+    }
+
+     */
+
+    /*
+
+    // Phương thức (method)
+    // Phân biệt tham số và đối số
+    function f(x) { // x sẽ là tham số của hàm
+        alert(x*x);
+    }
+
+    f(5); // số 5 là đối số của hàm
+
+    /*
+         Tham số: sau tên hàm khi khai báo, dùng để diện các ĐỐI SỐ để đem đi tính toán
+         Đối số: sau lời gọi hàm, là giá trị thực truyền vào hàm
+     */
+
+    /*
+   // Bài tập: Tạo một hàm nhận vào một tên và hiển thị lời chào cái tên đó lên hộp thoại
+   function hienThiLoiChao(name) { // Nhận được tất cả kiểu dữ liệu
+       alert("Chào " + name)
+   }
+
+   hienThiLoiChao("Hiếu")
+   hienThiLoiChao("Dân")
+   hienThiLoiChao("Linh")
+
+   function hienThiLoiChao2(name1, name2) { // Có thể nhận nhiều tham số truyền vào
+       alert(`Chao ${name1} và ${name2}`); // ${} template string
+   }
+   hienThiLoiChao2("Lâm", "Tiến Anh");
+
+     */
+
+
+    // Cách trả về dữ liệu của hàm.
+    // Viết 1 hàm nhận vào 2 số a và b. Và trả về trung cộng 2 số đó.
+
+    /*
+    function getAvg(a, b) {
+        let c = (a + b) / 2;
+        return c;  // từ khóa để trả về liệu của hàm và lập tức dừng hàm
+        return "Linh";
+        alert("Chào Dân");
+    }
+
+    // alert(getAvg(1, 3));
+    let tbc = getAvg(4,6);
+    alert(tbc);
+    // Một hàm chỉ có thể trả về 1 giá trị duy nhất.
+
+    function getNamesC06() {
+        let names = ["Dân", "Hiếu"]
+        return names;
+    }
+     */
+
+    function go() {
+        alert(a);
+    }
+
+    let a = 1;
+    // let name = "Linh";
+    let c = 2;
+    // Biến toàn cục: Bên ngoài các khối hoặc function và
+    // có phạm vi sử dụng từ lúc khai báo đến hết ct
+
+    for (let i = 0; i < 5; i++) {
+        let a = 5;
+        console.log(a + i);
+    }
+
+    // Biến cục bộ: Bên trong các khối hoặc hàm và
+    // có phạm vi sử dụng là trong khối (hoặc hàm)
+
+
+    let d = "Linh1";
+
+    function go() {
+        let d = "Linh2";
+        alert("ĐI đi " + d)
+    }
+
+    // alert(name);
+    // alert(d);
+
+
+    function tinhTong(a, b, c) {
+        return a + b + c;
+    }
+
+    function tinhTrungBinh(a, b, c) {
+        let tong = tinhTong(a, b, c);
+        let tb = tong / 3;
+        return tb;
+    }
+
+    alert(tinhTrungBinh(1, 3, 4));
+
+
+</script>
+</body>
+</html>
