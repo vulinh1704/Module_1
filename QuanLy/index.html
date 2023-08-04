@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" id="create">
+<button onclick="create()">Tạo mới</button>
+<br>
+<br>
+<table border="1">
+    <tr>
+        <th>Tên</th>
+        <th colspan="2">Sửa/Xóa</th>
+    </tr>
+    <tbody id="products">
+    </tbody>
+</table>
+
+<div id="edit">
+</div>
+
+<script>
+    let products = ['Bánh mì', 'Bánh cáy', 'Kẹo mút']
+
+    function showAll() {
+        let str = '';
+        for (let i = 0; i < products.length; i++) {
+            str += `
+             <tr>
+                <td>${products[i]}</td>
+                <td><button onclick="showFormEdit(${i})">Sửa</button></td>
+                <td><button onclick="remove(${i})">Xóa</button></td>
+             </tr>
+            `
+        }
+        document.getElementById('products').innerHTML = str;
+    }
+
+    showAll();
+
+    function create() {
+        let product = document.getElementById("create").value;
+        products.push(product);
+        showAll();
+    }
+
+    function remove(index) {
+        products.splice(index, 1);
+        showAll();
+    }
+
+    function showFormEdit(index) {
+        let productEdit = products[index];
+        let html = `
+        <input type="text" value="${productEdit}" id="productEdit">
+        <button onclick="edit(${index})">Save</button>
+        `
+        document.getElementById('edit').innerHTML = html;
+    }
+
+    function edit(index) {
+        let newProduct = document.getElementById('productEdit').value;
+        products[index] = newProduct;
+        showAll();
+    }
+
+</script>
+</body>
+</html>
