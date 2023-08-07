@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    class Girl {
+        image;
+        left;
+        v = 5;
+
+        constructor(imageInput, vInput) {
+            this.image = imageInput;
+            this.left = 0;
+            this.v = vInput;
+        }
+
+        getGirlHTML() {
+            return `
+            <img src="${this.image}"  style="left: ${this.left}px; position: absolute; width: 200px; height: 200px">
+            `
+        }
+
+        move() {
+            this.left += this.v;
+        }
+    }
+
+    let girl = new Girl("https://ordinaryofficial.vn/wp-content/uploads/2022/12/con-gai-han-quoc.jpg", 5);
+
+    function main() {
+        girl.move();
+        document.getElementById("game").innerHTML = girl.getGirlHTML();
+        setTimeout(main, 2);
+        if (girl.left >= window.innerWidth - 200 || girl.left < 0) {
+            girl.v = -girl.v
+        }
+
+    }
+
+    main()
+</script>
+</body>
+</html>

@@ -21,9 +21,7 @@ class Student {
         for (let i = 0; i < this.point.length; i++) {
             sum += this.point[i];
         }
-
-        let avg = sum/this.point.length;
-        return avg;
+        return sum / this.point.length;
     }
 
     getInfo() {

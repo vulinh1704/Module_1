@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Student {
+        name;
+        age;
+
+        constructor(name, age) {
+            this._name = name;
+            this._age = age;
+        }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(value) {
+            this._name = value;
+        }
+
+        get age() {
+            return this._age;
+        }
+
+        set age(value) {
+            this._age = value;
+        }
+    }
+
+    class Clazz {
+        listStudent;
+        name;
+        constructor(nameInput) {
+            this.listStudent = [];
+            this.name = nameInput;
+        }
+
+        add(newStudent) {
+            this.listStudent.push(newStudent)
+        }
+
+        findAll() {
+            return this.listStudent;
+        }
+
+        remove(index) {
+            this.listStudent.splice(index, 1);
+        }
+
+        edit(index, newStudent) {
+            this.listStudent[index] = newStudent;
+        }
+    }
+
+    function main() {
+        let C06 = new Clazz("C0623L1");
+        let sv1 = new Student("Dân", 30);
+        C06.add(sv1);
+
+        let sv2 = new Student("Đề", 31);
+        C06.add(sv2);
+        // C06.remove(1)
+
+        let sv3 = new Student("Linh", 10);
+        C06.edit(1, sv3);
+
+        let studentsC06 = C06.findAll();
+        for (let i = 0; i < studentsC06.length; i++) {
+            console.log(studentsC06[i]._name);
+        }
+    }
+   main()
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Address {
+        houseNumber;
+        district;
+
+        constructor(houseNumberInput, districtInput) {
+            this.district = districtInput;
+            this.houseNumber = houseNumberInput;
+        }
+
+        getHouseNumber() {
+            return this.houseNumber;
+        }
+
+        getDistrict() {
+            return this.district;
+        }
+
+        setHouseNumber(houseNumberInput) {
+            this.houseNumber = houseNumberInput;
+        }
+
+        setDistrict(districtInput) {
+            this.district = districtInput;
+        }
+    }
+
+
+    class Student {
+        nameStudent;
+        age; //number
+        address; // Address
+        constructor(nameStudentInput, ageInput, addressInput) {
+            this.nameStudent = nameStudentInput;
+            this.age = ageInput;
+            this.address = addressInput;
+        }
+
+        getAddress() {
+            return this.address;
+        }
+
+        setAddress(addressInput) {
+            this.address = addressInput;
+        }
+    }
+
+    function main() {
+        let diaChi1 = new Address('01 Trần duy hưng', 'Hà nội')
+        let sinhVien1 = new Student('Dân', 18, diaChi1);
+        alert(sinhVien1.getAddress().getHouseNumber());
+    }
+    main();
+
+</script>
+</body>
+</html>
